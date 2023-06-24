@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../images/Captura\ de\ pantalla\ 2023-06-22\ 180840.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 40px 20px;
+    width: 50;
+  }
+
+  .dropdown {
+    font-size: 2em;
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .background-image {
+    width: 50vh;
+  }
+
+ /* Media Queries */
+@media (max-width: 768px) {
+    .dropdown {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .dropdown-content {
+      min-width: 100%;
+      left: 0;
+    }
+  }
